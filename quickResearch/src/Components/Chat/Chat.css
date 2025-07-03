@@ -187,6 +187,7 @@
 .last_child 
 {
   height: 1px;
+  margin-bottom: 1rem;
   flex-shrink: 0;
 }
 

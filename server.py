@@ -29,7 +29,7 @@ init_sqlite_db(CHAT_DB_PATH)
 
 EMBEDDINGS = GoogleGenerativeAIEmbeddings(google_api_key=GOOGLE_API_KEY, model="models/embedding-001")
 VECTOR_STORE = Chroma(persist_directory=VECTOR_STORE_PATH, embedding_function=EMBEDDINGS)
-RETRIEVER = VECTOR_STORE.as_retriever(search_kwargs={"k": 8})
+RETRIEVER = VECTOR_STORE.as_retriever(search_kwargs={"k": 12})
 
 app = FastAPI()
 origins = ["http://localhost:5173", "http://127.0.0.1:5173", "http://127.0.0.1:5174", "http://localhost:5174"]
