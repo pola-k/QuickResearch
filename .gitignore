@@ -1,3 +1,5 @@
 .env
-./Data
-./VectorDB
+Data/
+VectorDB/
+__pycache__/
+chat.db
