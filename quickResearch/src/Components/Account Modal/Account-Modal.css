@@ -1,0 +1,75 @@
+.account-backdrop 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 998;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 5rem 0.5rem 0 0;
+}
+
+.account-container 
+{
+  display: flex;
+  width: 10vw;
+  min-width: 200px;
+  height: auto;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  color: var(--textcolor);
+  background-color: var(--cardcolor);
+  border-radius: 0.8rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.2s ease-in-out;
+  font-size: 0.6rem;
+}
+
+.account-container h2 
+{
+  text-align: center;
+  color: var(--textcolor);
+} 
+
+@keyframes fadeIn 
+{
+  0% 
+  {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logout-container 
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  transition: background-color 0.3s ease;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.logout-container:hover 
+{
+  background-color: var(--buttoncolor);
+}
+
+.logout-container img 
+{
+  width: 2rem;
+  height: 2rem;
+}

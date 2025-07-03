@@ -1,0 +1,46 @@
+.notification-container 
+{
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: max-content;
+    max-width: 90%;
+    animation: slideDownFade 0.5s ease-out;
+}
+  
+.notification 
+{
+    color: var(--textcolor);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.notification.success
+{
+    background-color: var(--successcolor);
+}
+
+.notification.error
+{
+    background-color: var(--errorcolor);
+}
+
+@keyframes slideDownFade 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}

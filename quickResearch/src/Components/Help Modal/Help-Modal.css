@@ -1,0 +1,71 @@
+.modal-backdrop 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.help-container 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--cardcolor);
+  color: var(--textcolor);
+  width: 60vw;
+  max-width: 800px;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 0.8rem;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.help-top-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.help-top-content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-width-line 
+{
+  margin: 0 -2rem;
+  width: calc(100% + 4rem);
+  border-top: 0.1rem solid var(--bordercolor);
+}
+
+.help-content 
+{
+    font-size: 1.1rem;
+}
+
+.close-button
+{
+    width: 2rem;
+    height: 2rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.close-button:hover
+{
+    background-color: var(--buttoncolor);
+}
